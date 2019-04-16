@@ -1,0 +1,21 @@
+<div class="profile">
+
+  <!-- Main Content -->
+  <div class="profile__container">
+    <button
+      mat-raised-button
+      class="profile__button btn btn-info btn-lg"
+      *ngFor="let p of pes | async"
+      routerLink="/codex/:id">
+      <fa-icon class="profile__icon" [icon]="faUserCircle" size="lg"></fa-icon><span class="">{{p.name.first}} {{p.name.last}}</span>
+    </button>
+  </div>
+
+  <!-- Break -->
+  <hr class="profile__break">
+
+  <!-- Footer -->
+  <div class="profile__footer">
+    <button mat-raised-button color="primary" class="profile__button--footer" size="lg"><fa-icon [icon]="faUserPlus"></fa-icon> Add Profile</button>
+  </div>
+</div>

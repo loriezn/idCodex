@@ -1,0 +1,16 @@
+.card {
+  height: auto;
+  background-color: slategray;
+  border-style: solid;
+  border-width: 1px;
+  // margin: 1em;
+  // padding: 0.5em;
+}
+
+.grid {
+  margin: 0.5rem;
+  display: grid;
+  grid-gap: 1rem 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
